@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Rayhan Atricha Rambe</title>
+    <link rel="icon" href="https://i.ibb.co.com/m5gyN3j/eas.jpg" />
+    <style>
+      :root {
+        --gradient: linear-gradient(
+          90.1deg,
+          rgba(84, 212, 228, 1) 0.2%,
+          rgba(68, 36, 164, 1) 99.9%
+        );
+      }
+      body {
+        min-height: 100vh;
+        background-color: #0093e9;
+        background-image: var(--gradient);
+        background-size: 200%;
+        animation: gradient-animation 30s infinite alternate;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      @keyframes gradient-animation {
+        0% {
+          background-position: left;
+        }
+        100% {
+          background-position: right;
+        }
+      }
+
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        flex: 1;
+      }
+
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .link {
+        min-width: 50% !important;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+
+        .link {
+          width: 100%;
+        }
+      }
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+
+      a {
+        outline: 2px solid black;
+      }
+      a:hover {
+        background-color: rgba(255, 255, 255, 0);
+      }
+
+      @keyframes fade-inout {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .fade-in-fade-out {
+        animation: fade-inout 5s infinite alternate;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body class="w3-white">
+    <!-- Content container -->
+    <div class="container">
+      <!-- Image and name container. Change to your picture here. -->
+      <div class="image-container">
+        <img
+          src="https://i.ibb.co.com/m5gyN3j/eas.jpg"
+          alt="Deskripsi Gambar"
+          style="max-width: 100%; height: 150px; border-radius: 50%"
+          class="w3-margin"
+        />
+
+        <!-- Content. Add bio. -->
+        <div class="w3-text-white">
+          <p class="w3-large">
+            <strong>Rayhan Atricha Rambe</strong>
+          </p>
+        </div>
+
+        <!-- Links section 1. Replace the # inside of the "" with your links. -->
+        <div class="links-container">
+          <a
+            href="https://www.instagram.com/reel/C73OFUAvmd3/?igsh=MW9vZ3p6ZTV0c2xqeg=="
+            class="w3-button w3-hover-blue w3-large w3-round-xlarge link"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i> Instagram</a
+          >
+          <a
+            href="https://github.com/siuuuu78"
+            class="w3-button w3-hover-blue w3-large w3-round-xlarge link"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i> Github</a
+          >
+          <a
+            href="https://www.linkedin.com/in/rayhan-rambe-303aba25b/"
+            class="w3-button w3-hover-blue w3-large w3-round-xlarge link"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+          <a
+            href=""
+            class="w3-button w3-hover-blue w3-large w3-round-xlarge link"
+            target="_blank"
+            ><i class="fa-brands fa-spotify"></i> Spotify</a
+          >
+          <div class="fade-in-fade-out">Jangan Lupa Titik Koma;</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-container"></footer>
+  </body>
+</html>
